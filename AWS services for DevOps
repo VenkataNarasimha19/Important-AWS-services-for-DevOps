@@ -1,0 +1,77 @@
+Most Essential AWS services for DevOps:
+
+Fundamental AWS Services:
+- VPC: Launch resources in virtual network. Amazon Virtual Private Cloud (Amazon VPC) enables you to provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you've defined.
+- EC2: Virtual servers in the cloud. 
+- S3: Scalable and secure object storage.
+- RDS: Easy setup and Scaling of Databases.
+- IAM: Secure access control for Resources.
+
+
+Fundamental AWS Services
+CICD Services in AWS:
+Networking services in AWS
+Database services in AWS
+Infrastructure as Code Service in AWS
+Container services in AWS
+Monitoring services in AWS
+Automation services in AWS
+Security services in AWS
+
+
+Fundamental AWS Services:
+VPC: Virtual Private Cloud is a networking service in AWS that lets you create your own private network in the cloud where can deploy your servers and databases in secure and isolated manner. As a DevOps engineer it is important to know the VPC because it is usually the first thing you will be creating new project.  
+As a DevOps engineer, you should have knowledge on subnets, route tables, internet gateway, NAT Gateway, and how to create a VPC.
+
+EC2: Elastic Compute Cloud is a service that lets you create virtual servers in the cloud. we can create servers of different operating systems and different sizes having CPU and RAM when you launch a server you can Define network settings storage and more. As a DevOps engineer you should know how to create a server because usually when you work As a devops engineer you will be asked to set up a server for setting up database, web applications, patch processing and more. you should know how to launch a server and different features of EC2 like Load balancing, Auto scaling group, security groups, key pairs and more.
+
+S3: Simple Storage Service that can be used to store unlimited amount of data. S3 is generally used to store images, files, videos or any kind of data. And DevOps engineer should know how to use S3 because a company can be using S3 bucket to store their customer data, database backups so you have knowledge of S3.
+
+Amazon RDS: Amazon RDS or Relational database service which is a managed service that lets you create setup and operate databases in the cloud.  RDS supports 6 popular database services which are Amazon Aurora, MariaDB, MySQL, Microsoft SQL and More. due to different features, many companies are using RDS as their production database and that's why every devops engineer should know RDS.
+
+IAM: Identity and Access Management which allows you to manage access to your aws resources using IAM you can create and manage users, groups, roles to control who can access specific resources and actions.
+As DevOps Engineer, it is essential to know IAM because, you need to ensure that only authorized users can have access to your critical resources like EC2 instances, S3 buckets, RDS databases.
+
+CI/CD Services that AWS Provides 
+
+CICD is the important process in devops that automates building, testing and deploying the code. AWS Provides you different CICD Services.
+
+CodeCommit: Code Commit is fully managed Source control service similar to GitHub where you can store your application code.
+As a DevOps engineer you should know code commit to store your code, track changes and to collaborate with other developers.
+
+Code Build: Code Build is fully managed build service that compiles the source code, runs the test and produces a software package that us ready to deploy. As a devops engineer, you should know code build, because it allows you to quickly and easily build and test code changes enabling for more faster and frequent software releases.
+
+Code Deploy: Code Deploy which is deployment service that automates software deployments on various compute servers such as EC2, Lambda, Fargate. A DevOps engineer will be using this service to deploy web applications and micro services. and DevOps engineer should know code deploy because it enables you to automate deployments reduce downtime and ensure consistency in the deployment process.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
