@@ -1,13 +1,3 @@
-Most Essential AWS services for DevOps:
-
-Fundamental AWS Services:
-- VPC: Launch resources in virtual network. Amazon Virtual Private Cloud (Amazon VPC) enables you to provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you've defined.
-- EC2: Virtual servers in the cloud. 
-- S3: Scalable and secure object storage.
-- RDS: Easy setup and Scaling of Databases.
-- IAM: Secure access control for Resources.
-
-
 Fundamental AWS Services
 CICD Services in AWS:
 Networking services in AWS
@@ -20,91 +10,58 @@ Security services in AWS
 
 
 Fundamental AWS Services:
-VPC: Virtual Private Cloud is a networking service in AWS that lets you create your own private network in the cloud where can deploy your servers and databases in secure and isolated manner. As a DevOps engineer it is important to know the VPC because it is usually the first thing you will be creating new project.  
-As a DevOps engineer, you should have knowledge on subnets, route tables, internet gateway, NAT Gateway, and how to create a VPC.
-
+VPC: Virtual Private Cloud is a networking service in AWS that lets you create your own private network in the cloud where can deploy your servers and databases in secure and isolated manner. As a DevOps engineer it is important to know the VPC because it is usually the first thing you will be creating when starting a new project. As a DevOps engineer, you should have knowledge on subnets, route tables, internet gateway, NAT Gateway, and how to create a VPC.
 EC2: Elastic Compute Cloud is a service that lets you create virtual servers in the cloud. we can create servers of different operating systems and different sizes having CPU and RAM when you launch a server you can Define network settings storage and more. As a DevOps engineer you should know how to create a server because usually when you work As a devops engineer you will be asked to set up a server for setting up database, web applications, patch processing and more. you should know how to launch a server and different features of EC2 like Load balancing, Auto scaling group, security groups, key pairs and more.
-
 S3: Simple Storage Service that can be used to store unlimited amount of data. S3 is generally used to store images, files, videos or any kind of data. And DevOps engineer should know how to use S3 because a company can be using S3 bucket to store their customer data, database backups so you have knowledge of S3.
-
 Amazon RDS: Amazon RDS or Relational database service which is a managed service that lets you create setup and operate databases in the cloud.  RDS supports 6 popular database services which are Amazon Aurora, MariaDB, MySQL, Microsoft SQL and More. due to different features, many companies are using RDS as their production database and that's why every devops engineer should know RDS.
+IAM: Identity and Access Management which allows you to manage access to your aws resources using IAM you can create and manage users, groups, roles to control who can access specific resources and actions.As DevOps Engineer, it is essential to know IAM. because, you need to ensure that only authorized users can have access to your critical resources like EC2 instances, S3 buckets, RDS databases.
 
-IAM: Identity and Access Management which allows you to manage access to your aws resources using IAM you can create and manage users, groups, roles to control who can access specific resources and actions.
-As DevOps Engineer, it is essential to know IAM because, you need to ensure that only authorized users can have access to your critical resources like EC2 instances, S3 buckets, RDS databases.
-
-CI/CD Services that AWS Provides 
-
+CI/CD Services in AWS:
 CICD is the important process in devops that automates building, testing and deploying the code. AWS Provides you different CICD Services.
 
-CodeCommit: Code Commit is fully managed Source control service similar to GitHub where you can store your application code.
-As a DevOps engineer you should know code commit to store your code, track changes and to collaborate with other developers.
-
+Code Commit: Code Commit is fully managed Source control service similar to GitHub where you can store your application code. As a DevOps engineer you should know code commit to store your code, track changes and to collaborate with other developers.
 Code Build: Code Build is fully managed build service that compiles the source code, runs the test and produces a software package that us ready to deploy. As a devops engineer, you should know code build, because it allows you to quickly and easily build and test code changes enabling for more faster and frequent software releases.
-
 Code Deploy: Code Deploy which is deployment service that automates software deployments on various compute servers such as EC2, Lambda, Fargate. A DevOps engineer will be using this service to deploy web applications and micro services. and DevOps engineer should know code deploy because it enables you to automate deployments reduce downtime and ensure consistency in the deployment process.
+Code Pipeline: Code Pipeline is a Continuous delivery service that helps to automate your release pipelines for faster and more reliable application updates. Code Pipeline can be integrated with different cicd tools like git, GitHub, Jenkins and other aws services like code deploy, code, code build. A devops engineer should have knowledge on code pipeline for to automate the deployment process resulting in more faster and reliable release.
 
-CodePipeline: CodePipeline is a Continuous delivery service that helps to automate your release pipelines for faster and more reliable application updates. Code Pipeline can be integrated with different cicd tools like git, GitHub, Jenkins and other aws services like code deploy, code, code build. A devops engineer should have knowledge on code pipeline for to automate the deployment process resulting in more faster and reliable release.
 
-
-Networking Services in AWS:
-VPC & Route53
+Networking Services in AWS: VPC & Route53
 Route53: Route53 is a DNS Service in AWS that let you register domain names for your applications or websites and you can also can create and configure DNS records that can Route traffic to your AWS services such as EC2, S3 buckets, Load Balancer and more. A DevOps engineer should know how to use Route53 to Register Domain names, create DNS records, setup health checks and also failover routing policies.
 
 
-Database Services in AWS:
-RDS, DynamoDB & Elasticcache.
+Database Services in AWS: there are 3 main AWS services. those are RDS, DynamoDB & Elasticcache.
 RDS: So using RDS, you can create SQL databases like MariaDB, MySQL, Postgress SQL, Oracle and more.
-
 DynamoDB: DynamoDB is very popular NoSQL database that is very fast and highly scalable a lot of applications using dynamodb. so every devops engineer should know how to work with dynamodb. 
-
-ElasticCache: Elastic cache is an in-memory database that is used to store frequently access data session data and metadata for example an -e-commerce websites can be using elastic cache to store frequently accessed data of product or customer information reducing the number of calls on database and improving the performance of application. So a devops engineer should know elastic cache to improve application performance and to reduce the database load.
+ElasticCache: Elastic cache is an in-memory database that is used to store frequently access data session data and metadata for example an e-commerce websites can be using elastic cache to store frequently accessed data of product or customer information reducing the number of calls on database and improving the performance of application. So a devops engineer should know elastic cache to improve application performance and to reduce the database load.
 
 Infrastructure as a Code service in AWS:
 CloudFormation: CloudFormation is an Infrastructure as a code service that let you manage and provision AWS resources such as EC2, S3, Lambda, RDS anything in the form of code and not only this, CloudFormation also supports third-party infrastructure tool like Terraform. So a DevOps engineer should know how to work with CloudFormation, how to create cloudformation stack templates to provision and manage AWS services in the form of code.
 
 
 Container Services in AWS:
-ECR, ECS, EKS
 Due to the rise of Docker and Kubernetes, every application is deployed in the form of containers. and AWS offers you with different container services such as ECR, ECS, EKS and more.
 
 ECR: Elastic Container registry which lets store, manage and deploy your docker container images in ECR. a Devops engineer should know how to use ECR to Deploy the docker container images in private and public registry and to use them with other AWS services such as ECS, EKS. ECR is similar to DockerHub but this service in AWS.
-
 ECS: Amazon Elastic Container Service is a continer orchestration service that lets you run, scale and manage your docker containers on the cloud. First you will be pushing your application image on ECR and then using ECS to deploy them in the form of Containers. ECS Supports 2 different launch types. EC2 & Fargate launch types. EC2 Launch type, you will deploy your docker containers on EC2 servers where as using fargate you will deploy your docker containers in serverless fashion. as a Devops Engineer, you should know  ECS to deploy your application to ensure high availability and reliability.
-
-Amazon EKS or Elastic Kubernetes service; a company wants to deploy their containerized application on Kubernetes cluster without managing any Kubernetes architecture then they can use Amazon EKS.
-Amazon EKS or Elastic Kubernetes service that lets you manage and deploy application on Kubernetes cluster which is going to be managed totally by AWS. A Devops engineer should know how to create cluster, how to create node groups, how to create deploy the applications on these Kubernetes cluster because every company is using Kubernetes and you should know this.
+EKS or Amazon Elastic Kubernetes service: a company wants to deploy their containerized application on Kubernetes cluster without managing any Kubernetes architecture then they can use Amazon EKS. Amazon EKS or Elastic Kubernetes service that lets you manage and deploy application on Kubernetes cluster which is going to be managed totally by AWS. A Devops engineer should know how to create cluster, how to create node groups, how to create deploy the applications on these Kubernetes cluster because every company is using Kubernetes and you should know this.
 
 
 
+Monitoring services in AWS:
+Monitoring is very important aspect of Devops to check the status and health of your application. AWS provides with different Monitoring services. lets look at two important monitoring service that you should know as devops.
+CloudWatch: Amazon Cloud Watch is a Monitoring service in AWS that lets you collect and track metrics, log files and set alarms. so if you have an application which is showing high CPU usage and going down, you can use cloud watch for that. with cloudwatch you can collect metrics like CPU usage, memory utilization, network traffic, disk IO and create alarms to alert when certain thresholds are met. So, Cloud watch is a good tool to monitor real-time monitoring of EC2 servers, S3, EKS or any AWS Services. a DevOps engineer, should know how to use cloudwatch to set up alarms, track metrics and to troubleshoot error whenever there is an issue.
+CloudTrail: Imagine, you are working in a company and someone deletes a production database. how would you know who has deleted it. you can do it using CloudTrail. So, CloudTrail is an AWS service that will look all the API Calls made in that account. using CloudTrail, you can audit and monitor your AWS resources and detects security incidents. the cloud trail can be used to monitor any kind of logs like creating instances, deleting s3 buckets, changing security group rule or anything. So as a devops engineer, you should know how to use cloudtrail because it can help them to track and troubleshoot issues or any security breaches.
+
+Automation Services in AWS:
+Automation is very important part and every devops engineer is going to automate all the repetitive tasks. AWS provides you with different automation services.
+Lambda: Lambda is a very popular serverless compute service which lets you run code without managing any service. you can use Lambda to automate different workloads right. so you can write the automation code and put it on Lambda and you can trigger it on the basis of different events like adding something on s3 bucket or creating ec2 instances and more. As a devops engineer, you should know how to use Lambda to automate different workflows without managing any underlying infrastructure which can reduce the complexity of these automation workflows. so you should know Lambda.
+Systems Manager: Using system manager you can order to make operational tasks like patching software deployment or configuration management while collecting the data for future analysis and security practices. so, devops engineer should know how to use systems manager to manage infrastructure at scale and gain insights on system performance and security.
+Elastic Beanstalk: Elastic bean stalk is a fully managed service to automate your deployment of applications. if you push your code on elastic beanstalk, it will automatically handle the deployment provisioning of servers, load balancing, auto scaling and more. Letting you focus only on the code. A devops engineer should know how to use elastic beanstalk because it provides a simple way to deploy application without managing any infrastructure. 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Security Services in AWS:
+KMS & Secrets Manager:
+KMS: KMS stands for Key Management Service which lets you create and control encryption keys that can be used to encrypt any kind of data on the cloud. KMS can be used to encrypt s3 buckets, database backups, EBS volumes and more. a devops engineer should know how to use and encrypt data using KMS because it is critical component to secure data on the cloud.
+Secrets Manager: Secret Manager is a service where you will be storing your passwords, database credentials, API Keys and other secrets. it allows you to enable automatic rotation and integration with different AWS Services.so, Devops engineer should know how to use secrets manager and to store their secrets inside it. so that you don't need to put them in your code and you can integrate them with your other AWS services as well.
 
 
