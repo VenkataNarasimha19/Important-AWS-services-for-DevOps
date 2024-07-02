@@ -43,6 +43,39 @@ Code Build: Code Build is fully managed build service that compiles the source c
 
 Code Deploy: Code Deploy which is deployment service that automates software deployments on various compute servers such as EC2, Lambda, Fargate. A DevOps engineer will be using this service to deploy web applications and micro services. and DevOps engineer should know code deploy because it enables you to automate deployments reduce downtime and ensure consistency in the deployment process.
 
+CodePipeline: CodePipeline is a Continuous delivery service that helps to automate your release pipelines for faster and more reliable application updates. Code Pipeline can be integrated with different cicd tools like git, GitHub, Jenkins and other aws services like code deploy, code, code build. A devops engineer should have knowledge on code pipeline for to automate the deployment process resulting in more faster and reliable release.
+
+
+Networking Services in AWS:
+VPC & Route53
+Route53: Route53 is a DNS Service in AWS that let you register domain names for your applications or websites and you can also can create and configure DNS records that can Route traffic to your AWS services such as EC2, S3 buckets, Load Balancer and more. A DevOps engineer should know how to use Route53 to Register Domain names, create DNS records, setup health checks and also failover routing policies.
+
+
+Database Services in AWS:
+RDS, DynamoDB & Elasticcache.
+RDS: So using RDS, you can create SQL databases like MariaDB, MySQL, Postgress SQL, Oracle and more.
+
+DynamoDB: DynamoDB is very popular NoSQL database that is very fast and highly scalable a lot of applications using dynamodb. so every devops engineer should know how to work with dynamodb. 
+
+ElasticCache: Elastic cache is an in-memory database that is used to store frequently access data session data and metadata for example an -e-commerce websites can be using elastic cache to store frequently accessed data of product or customer information reducing the number of calls on database and improving the performance of application. So a devops engineer should know elastic cache to improve application performance and to reduce the database load.
+
+Infrastructure as a Code service in AWS:
+CloudFormation: CloudFormation is an Infrastructure as a code service that let you manage and provision AWS resources such as EC2, S3, Lambda, RDS anything in the form of code and not only this, CloudFormation also supports third-party infrastructure tool like Terraform. So a DevOps engineer should know how to work with CloudFormation, how to create cloudformation stack templates to provision and manage AWS services in the form of code.
+
+
+Container Services in AWS:
+ECR, ECS, EKS
+Due to the rise of Docker and Kubernetes, every application is deployed in the form of containers. and AWS offers you with different container services such as ECR, ECS, EKS and more.
+
+ECR: Elastic Container registry which lets store, manage and deploy your docker container images in ECR. a Devops engineer should know how to use ECR to Deploy the docker container images in private and public registry and to use them with other AWS services such as ECS, EKS. ECR is similar to DockerHub but this service in AWS.
+
+ECS: Amazon Elastic Container Service is a continer orchestration service that lets you run, scale and manage your docker containers on the cloud. First you will be pushing your application image on ECR and then using ECS to deploy them in the form of Containers. ECS Supports 2 different launch types. EC2 & Fargate launch types. EC2 Launch type, you will deploy your docker containers on EC2 servers where as using fargate you will deploy your docker containers in serverless fashion. as a Devops Engineer, you should know  ECS to deploy your application to ensure high availability and reliability.
+
+Amazon EKS or Elastic Kubernetes service; a company wants to deploy their containerized application on Kubernetes cluster without managing any Kubernetes architecture then they can use Amazon EKS.
+Amazon EKS or Elastic Kubernetes service that lets you manage and deploy application on Kubernetes cluster which is going to be managed totally by AWS. A Devops engineer should know how to create cluster, how to create node groups, how to create deploy the applications on these Kubernetes cluster because every company is using Kubernetes and you should know this.
+
+
+
 
 
 
